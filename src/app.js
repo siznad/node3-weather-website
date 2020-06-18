@@ -63,7 +63,8 @@ app.get('/weather', (req, res) => {
                 location,
                 description: forecastData.description,
                 forecast: forecastData.current_temp,
-                feels_like: forecastData.feels_like
+                feels_like: forecastData.feels_like,
+                humidity: forecastData.humidity
             })
           })
     })
